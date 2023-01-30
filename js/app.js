@@ -2,7 +2,7 @@ window.HUB_EVENTS={ASSET_ADDED:"ASSET_ADDED",ASSET_DELETED:"ASSET_DELETED",ASSET
 
 var colors = ["#3a1149", "#f30000", "#24177c", "#ec710b",
              "#3a1149", "#f30000", "#24177c", "#ec710b"];
-var prizes = ["TRY AGAIN", " 100% up to  6000 EUR", "50 FS", "100 FS", "NO WIN", "  50% up to   375 EUR", "200 FS", "  75% up to   450 EUR"];
+var prizes = ["TRY AGAIN", " 100% up to  4000 EUR", "50 FS", "100 FS", "NO WIN", "  50% up to   375 EUR", "200 FS", "  75% up to   450 EUR"];
 
 var startAngle = 0*Math.PI/180;
 var arc = (2 * Math.PI) / colors.length;
@@ -201,18 +201,17 @@ function stopRotateWheel() {
 }
 
 
+function $_GET(e,t){return!!(t=t.match(new RegExp(e+"=([^&=]+)")))&&t[1]}
+var getStag = $_GET("stag", window.location.href);
+var stag = "?stag=" + getStag;
+console.log("STAG -" + stag);
+
 $('.btn-1').click(function(){
   $('body').addClass('two')
   $('button.carousel__button.is-close').trigger('click')
   spin()
 
 })
-
-
-function $_GET(e,t){return!!(t=t.match(new RegExp(e+"=([^&=]+)")))&&t[1]}
-var getStag = $_GET("stag", window.location.href);
-var stag = "?stag=" + getStag;
-console.log("STAG -" + stag);
 
 
 $('.btn-2').click(function(){     
