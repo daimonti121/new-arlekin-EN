@@ -215,7 +215,7 @@ $('.btn-1').click(function(){
 
 
 $('.btn-2').click(function(){     
-    window.location.href = 'https://www.arlekincasino.com/en-CA/users/sign_up' + stag;
+    window.location.href = 'https://www.arlekincasino.com/en/users/sign_up' + stag;
 })
 
 
